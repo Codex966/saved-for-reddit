@@ -74,7 +74,7 @@
    csv-string
    (.encodeURIComponent
     js/window
-    (let [post-keys [:title :url :subreddit :nsfw :body :id]]
+    (let [post-keys [:title :url :subreddit :nsfw :body :author :id]]
       ;; [post-keys (keys ((first (keys @saved-posts)) @saved-posts))]
       (reduce (fn [csv-string post-name]
                 (str
